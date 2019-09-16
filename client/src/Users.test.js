@@ -1,10 +1,16 @@
 import Users from './components/Users';
+import App from './App';
 import * as rtl from '@testing-library/react';
 import { render } from "@testing-library/react";
-import 'jest-dom/extend-expect';
 
 afterEach(rtl.cleanup);
 
 test('User renders without crashing', ()=> {
-render(<Users/>)
+const wrapper = render(<Users/>)
+wrapper.debug()
 })
+
+test('App renders without crashing', ()=> {
+    const wrapper = render(<App/>)
+    wrapper.debug()
+    })

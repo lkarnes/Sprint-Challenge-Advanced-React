@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Users from './components/Users';
 import {useDarkMode} from './useDarkMode'
 import './App.css';
